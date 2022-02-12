@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>_1</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>network_file_document_text_s_paper_news_user_interface_ui_feed_icon_210805.ico</ApplicationIcon>
+  </PropertyGroup>
+
+</Project>
