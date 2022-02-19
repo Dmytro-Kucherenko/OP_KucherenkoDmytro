@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Stud\\OP\\Практична робота №1\\1\\1.csproj",
+      "projectUniqueName": "E:\\Stud\\OP\\Prac 1\\1\\1.csproj",
       "projectName": "1",
-      "projectPath": "E:\\Stud\\OP\\Практична робота №1\\1\\1.csproj",
+      "projectPath": "E:\\Stud\\OP\\Prac 1\\1\\1.csproj",
       "packagesPath": "C:\\Users\\Dmytro\\.nuget\\packages\\",
-      "outputPath": "E:\\Stud\\OP\\Практична робота №1\\1\\obj\\",
+      "outputPath": "E:\\Stud\\OP\\Prac 1\\1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dmytro\\AppData\\Roaming\\NuGet\\NuGet.Config",

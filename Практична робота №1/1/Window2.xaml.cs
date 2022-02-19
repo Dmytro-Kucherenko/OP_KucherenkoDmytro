@@ -20,6 +20,7 @@ namespace Prj_Soft_Protection
     {
         static int counter = 0;
         static double attempts = 0;
+        static double disp = 0;
         static double sa;
         static StreamReader sr = new StreamReader(@"E:\\Stud\\OP\\Prac 1\\1\\bin\\Debug\\net5.0-windows\\result.txt");
         static Stopwatch stopwatch = new Stopwatch();
@@ -58,10 +59,15 @@ namespace Prj_Soft_Protection
                 if (counter == CountProtection.SelectedIndex + 3)
                 {
                     InputField.IsEnabled = false;
-                    DispField.Content = sa;
                     StatisticsBlock.Content = counter / attempts;
                     P1Field.Content = 1 - counter / attempts;
+                    if (disp / attempts < 1)
+                        DispField.Content = "однорідні";
+                    else
+                        DispField.Content = "неоднорідні";
+                    attempts = 0;
                     counter = 0;
+                    disp = 0;
                 }
             }
         }
@@ -87,6 +93,7 @@ namespace Prj_Soft_Protection
                 if (f > fisher[inter.Count - 1])
                 {
                     attempts++;
+                    disp++;
                     MessageBox.Show("Дисперсії неоднорідні");
                     return;
                 }
