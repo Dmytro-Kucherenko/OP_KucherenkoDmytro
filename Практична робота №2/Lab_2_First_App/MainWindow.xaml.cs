@@ -196,7 +196,6 @@ namespace Lab_2_First_App
                 }
             }
 
-
             for (int i = 0; i < 3; i++)
             {
                 if (rnd.Next(10) > 1)
