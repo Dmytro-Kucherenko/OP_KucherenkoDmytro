@@ -1,0 +1,23 @@
+﻿<Window x:Name="MainForm" x:Class="_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2"
+        mc:Ignorable="d"
+        Title="Перший WPF-додаток" Height="462" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF001128" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label Content="Головна форма&#xD;&#xA;" HorizontalAlignment="Left" Margin="33,26,0,0" VerticalAlignment="Top" Foreground="White" Width="282" FontSize="34" FontFamily="Bahnschrift SemiLight" Height="56"/>
+        <Button x:Name="B1" Content="До вікна 1" HorizontalAlignment="Left" Margin="33,100,0,0" VerticalAlignment="Top" Height="60" Width="150" FontSize="20" FontFamily="Bahnschrift SemiLight" Foreground="Black" Background="#FFD1D1D1" Click="B1_Click"/>
+        <Button x:Name="B2" Content="До вікна 2" HorizontalAlignment="Left" Margin="33,182,0,0" VerticalAlignment="Top" Height="59" Width="150" FontSize="20" FontFamily="Bahnschrift SemiLight" Foreground="Black" Background="#FFD1D1D1" Click="B2_Click"/>
+        <Button x:Name="B3" Content="До вікна 3" HorizontalAlignment="Left" Margin="33,255,0,0" VerticalAlignment="Top" Height="60" Width="150" FontSize="20" FontFamily="Bahnschrift SemiLight" Foreground="Black" Background="#FFD1D1D1" Click="B3_Click"/>
+        <Button x:Name="Exit" Content="Вихід" HorizontalAlignment="Left" Margin="620,334,0,0" VerticalAlignment="Top" Height="60" Width="150" FontSize="20" FontFamily="Bahnschrift SemiLight" Foreground="Black" Background="#FFFFAAAA" Click="Exit_Click"/>
+        <Button x:Name="B3_Copy" Content="До вікна 4" HorizontalAlignment="Left" Margin="33,334,0,0" VerticalAlignment="Top" Height="60" Width="150" FontSize="20" FontFamily="Bahnschrift SemiLight" Foreground="Black" Background="#FFD1D1D1" Click="B3_Copy_Click"/>
+    </Grid>
+</Window>
