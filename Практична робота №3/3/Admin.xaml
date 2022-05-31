@@ -1,0 +1,44 @@
+﻿<Window x:Class="_3.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3"
+        mc:Ignorable="d"
+        Title="Admin" Height="516" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Введіть пароль адміністратора" HorizontalAlignment="Left" Margin="50,5,0,0" VerticalAlignment="Top" Width="256"/>
+        <TextBox x:Name="AutoEnt" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296" Background="#FFC7C7C7" BorderBrush="#FF535353"/>
+        <Button x:Name="AutoBut" Content="Авторизуватись" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="296" Background="#FFB6B6B6" BorderBrush="#FF303030" Click="AutoBut_Click"/>
+        <Label Content="Перегляд користувачів списком" HorizontalAlignment="Left" Margin="50,89,0,0" VerticalAlignment="Top" Width="256"/>
+        <DataGrid x:Name="output" HorizontalAlignment="Left" Height="345" Margin="10,115,0,0" VerticalAlignment="Top" Width="296" Background="#FFC3C3C3" BorderBrush="#FF535353"/>
+        <Label Content="Зміна паролю Адміністратора" HorizontalAlignment="Left" Margin="467,5,0,0" VerticalAlignment="Top" Width="180" BorderThickness="1"/>
+        <Label Content="Введіть старий пароль *" HorizontalAlignment="Left" Margin="376,36,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label Content="Введіть новий пароль *" HorizontalAlignment="Left" Margin="587,33,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="ChangePass" HorizontalAlignment="Left" Height="23" Margin="324,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" Background="#FFC7C7C7" BorderBrush="#FF535353" IsEnabled="False"/>
+        <TextBox x:Name="ChangeNewPass" HorizontalAlignment="Left" Height="23" Margin="547,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Background="#FFC7C7C7" BorderBrush="#FF535353" IsEnabled="False"/>
+        <Button x:Name="ChangeUpdate" Content="Оновити" HorizontalAlignment="Left" Margin="325,143,0,0" VerticalAlignment="Top" Width="449" Background="#FFB6B6B6" BorderBrush="#FF303030" IsEnabled="False" Click="ChangeUpdate_Click"/>
+        <Label Content="Перегляд кожного користувача" HorizontalAlignment="Left" Margin="466,168,0,0" VerticalAlignment="Top" Width="195" BorderThickness="1" Height="26"/>
+        <Label Content="Прізвище" HorizontalAlignment="Left" Margin="322,203,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PCheck" Content="" HorizontalAlignment="Left" Margin="386,199,0,0" VerticalAlignment="Top" Width="171" BorderBrush="Black" BorderThickness="1" Height="33"/>
+        <Label Content="Логін" HorizontalAlignment="Left" Margin="325,241,0,0" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.065,0.538"/>
+        <Label x:Name="LogCheck" Content="" HorizontalAlignment="Left" Margin="386,237,0,0" VerticalAlignment="Top" Width="387" BorderBrush="Black" BorderThickness="1" Height="33
+               "/>
+        <Button x:Name="StatChange" Content="Змінити статус" HorizontalAlignment="Left" Margin="322,309,0,0" VerticalAlignment="Top" Width="234" Background="#FFB6B6B6" BorderBrush="#FF303030" Height="26" IsEnabled="False" Click="StatChange_Click"/>
+        <Label x:Name="StatCheck" Content="" HorizontalAlignment="Left" Margin="560,309,0,0" VerticalAlignment="Top" Width="214" BorderBrush="Black" BorderThickness="1" Height="26"/>
+        <Label Content="Додавання користувача" HorizontalAlignment="Left" Margin="481,338,0,0" VerticalAlignment="Top" Width="180" BorderThickness="1" Height="26"/>
+        <Label Content="Логін *" HorizontalAlignment="Left" Margin="325,364,0,0" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="AddLogin" HorizontalAlignment="Left" Height="23" Margin="376,367,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="398" Background="#FFC7C7C7" BorderBrush="#FF535353" IsEnabled="False"/>
+        <Button x:Name="AddUser" Content="Додати користувача" HorizontalAlignment="Left" Margin="324,395,0,0" VerticalAlignment="Top" Width="450" Background="#FFB6B6B6" BorderBrush="#FF303030" Height="30" IsEnabled="False" Click="AddUser_Click"/>
+        <Button x:Name="Exit" Content="Вийти" HorizontalAlignment="Left" Margin="324,430,0,0" VerticalAlignment="Top" Width="450" Click="ExitClick" Background="#FFD38484" BorderBrush="#FF303030" Height="30"/>
+        <Button x:Name="Previous" Content="Попередній" HorizontalAlignment="Left" Margin="321,278,0,0" VerticalAlignment="Top" Width="234" Background="#FFB6B6B6" BorderBrush="#FF303030" Height="26" IsEnabled="False" Click="Previous_Click"/>
+        <Button x:Name="Next" Content="Наступний" HorizontalAlignment="Left" Margin="560,278,0,0" VerticalAlignment="Top" Width="213" Background="#FFB6B6B6" BorderBrush="#FF303030" Height="26" IsEnabled="False" Click="Next_Click"/>
+        <TextBox x:Name="ChangeName" HorizontalAlignment="Left" Height="23" Margin="325,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" Background="#FFC7C7C7" BorderBrush="#FF535353" IsEnabled="False"/>
+        <TextBox x:Name="ChangeSurname" HorizontalAlignment="Left" Height="23" Margin="547,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" Background="#FFC7C7C7" BorderBrush="#FF535353" IsEnabled="False"/>
+        <Label Content="Введіть ім'я" HorizontalAlignment="Left" Margin="390,89,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Введіть прізвище" HorizontalAlignment="Left" Margin="607,90,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label Content="Ім'я" HorizontalAlignment="Left" Margin="558,203,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ICheck" Content="" HorizontalAlignment="Left" Margin="588,199,0,0" VerticalAlignment="Top" Width="186" BorderBrush="Black" BorderThickness="1" Height="33"/>
+
+    </Grid>
+</Window>

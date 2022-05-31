@@ -11,6 +11,7 @@ namespace Lab_2_First_App
 {
     public partial class MainWindow : Window
     {
+        static Random rnd = new Random();
         static bool b = true;
         static DispatcherTimer dT;
         static int Radius = 20;
@@ -34,7 +35,6 @@ namespace Lab_2_First_App
 
         private void InitPoints()
         {
-            Random rnd = new Random();
             pC.Clear();
             EllipseArray.Clear();
 
@@ -147,7 +147,6 @@ namespace Lab_2_First_App
         static PointCollection[] roads = new PointCollection[6];
         private int[] Genetic()
         {
-            Random rnd = new Random();
             int[] way = new int[PointCount];
             PointCollection[] temp = new PointCollection[3];
             List<PointCollection> cloneTemp = new List<PointCollection>();

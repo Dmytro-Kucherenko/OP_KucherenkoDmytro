@@ -41,7 +41,7 @@ namespace _2
             nw.FontSize = 22;
             nw.Title = "Зчитування даних";
             nw.Background = (Brush)bc.ConvertFrom("#FFB8B8B8");
-            nw.ResizeMode = ResizeMode.NoResize;
+            //nw.ResizeMode = ResizeMode.NoResize;
 
             Grid mygrid = new Grid();
             mygrid.ShowGridLines = false;
@@ -343,7 +343,7 @@ namespace _2
             nw.Width = 440;
             nw.Height = 680;
             nw.FontSize = 22;
-            nw.Title = "Калькултор";
+            nw.Title = "Калькулятор";
             nw.Background = (Brush)bc.ConvertFrom("#FFB8B8B8");
             nw.ResizeMode = ResizeMode.NoResize;
 
