@@ -1,0 +1,20 @@
+﻿<Window x:Class="_46.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_46"
+        mc:Ignorable="d"
+        Title="Голвне вікно" Height="390" Width="890" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Рекорди за весь час" HorizontalAlignment="Left" Margin="272,8,0,0" VerticalAlignment="Top" FontSize="26"/>
+        <Label x:Name="BiggestSum" Content="Дилер за максимальною &#xD;&#xA;сумою продажу:" HorizontalAlignment="Left" Margin="20,58,0,0" VerticalAlignment="Top" FontSize="16" Height="144" Width="267" BorderBrush="#FF383838" BorderThickness="1" Background="#FFC7C7C7"/>
+        <Label x:Name="BiggestCom" Content="Дилер за максимальною &#xA;сумою комісійних:" HorizontalAlignment="Left" Margin="301,58,0,0" VerticalAlignment="Top" FontSize="16" Height="144" Width="284" BorderBrush="#FF383838" BorderThickness="1" Background="#FFC7C7C7"/>
+        <Label x:Name="BiggestPrice" Content="Клієнт, що придбав &#xD;&#xA;найдорожчий авто:" HorizontalAlignment="Left" Margin="599,58,0,0" VerticalAlignment="Top" FontSize="16" Height="144" Width="263" BorderBrush="#FF383838" BorderThickness="1" Background="#FFC7C7C7"/>
+        <Button x:Name="Dealer" Content="Виставити автомобіль у продаж" HorizontalAlignment="Left" Margin="20,231,0,0" VerticalAlignment="Top" Width="267" Height="58" FontSize="14" Background="#FFB6B6B6" BorderBrush="#FF4B4B4B" Click="Dealer_Click"/>
+        <Button x:Name="Client" Content="Купити автомобіль" HorizontalAlignment="Left" Margin="301,231,0,0" VerticalAlignment="Top" Width="284" Height="58" FontSize="14" Background="#FFB6B6B6" BorderBrush="#FF494949" Click="Client_Click"/>
+        <Button x:Name="Stats" Content="Статистика" HorizontalAlignment="Left" Margin="599,231,0,0" VerticalAlignment="Top" Width="263" Height="58" FontSize="14" Background="#FFB6B6B6" BorderBrush="#FF363636" Click="Stats_Click"/>
+        <Button x:Name="Exit" Content="Вийти" HorizontalAlignment="Left" Margin="20,300,0,0" VerticalAlignment="Top" Width="842" Height="32" FontSize="14" Background="#FFDC9999" BorderBrush="#FF474747" Click="Exit_Click"/>
+
+    </Grid>
+</Window>

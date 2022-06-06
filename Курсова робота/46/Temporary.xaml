@@ -1,0 +1,33 @@
+﻿<Window x:Class="_46.Temporary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_46"
+        mc:Ignorable="d"
+        Title="Авторизація" Height="390" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Авторизація " HorizontalAlignment="Left" Margin="79,-2,0,0" VerticalAlignment="Top" Width="204" Height="53" FontSize="26"/>
+        <Label Content="Реєстрація" HorizontalAlignment="Left" Margin="463,0,0,0" VerticalAlignment="Top" Width="186" Height="49" FontSize="26"/>
+        <Label Content="Серійний номер" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="140" Height="38" FontSize="16"/>
+        <TextBox x:Name="Serial" HorizontalAlignment="Left" Height="34" Margin="140,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="143" Background="#FFC7C7C7" BorderBrush="#FF535353"/>
+        <Label Content="Ім'я" HorizontalAlignment="Left" Margin="313,56,0,0" VerticalAlignment="Top" Width="148" Height="36" FontSize="16"/>
+        <Label Content="Прізвище" HorizontalAlignment="Left" Margin="313,98,0,0" VerticalAlignment="Top" Width="153" Height="37" FontSize="16"/>
+        <TextBox x:Name="NewSurname" HorizontalAlignment="Left" Height="33" Margin="413,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Background="#FFC7C7C7" BorderBrush="#FF535353"/>
+        <TextBox x:Name="NewName" HorizontalAlignment="Left" Height="33" Margin="413,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Background="#FFC7C7C7" BorderBrush="#FF535353"/>
+        <Label Content="Побатькові" HorizontalAlignment="Left" Margin="313,140,0,0" VerticalAlignment="Top" Width="148" Height="37" FontSize="16"/>
+        <Label x:Name="Changable" Content="Місто" HorizontalAlignment="Left" Margin="313,177,0,0" VerticalAlignment="Top" Width="95" Height="35" FontSize="16"/>
+        <TextBox x:Name="NewTown" HorizontalAlignment="Left" Height="31" Margin="413,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Background="#FFC7C7C7" BorderBrush="#FF535353"/>
+        <TextBox x:Name="NewSecondName" HorizontalAlignment="Left" Height="33" Margin="413,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Background="#FFC7C7C7" BorderBrush="#FF535353"/>
+        <Button x:Name="AddNew" Content="Зареєструватися" HorizontalAlignment="Left" Margin="313,288,0,0" VerticalAlignment="Top" Width="460" Background="#FFB6B6B6" BorderBrush="#FF303030" Height="42" FontSize="14" Click="AddNew_Click"/>
+        <Button x:Name="Auto" Content="Авторизуватись" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="273" Click="AutoClick" Background="#FFB6B6B6" BorderBrush="#FF303030" Height="42" FontSize="14"/>
+        <Button x:Name="Exit" Content="Вийти" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="273" Click="ExitClick" Background="#FFDC9999" BorderBrush="#FF303030" Height="42" FontSize="14"/>
+        <Label Content="Адреса" HorizontalAlignment="Left" Margin="313,212,0,0" VerticalAlignment="Top" Width="148" Height="35" FontSize="16"/>
+        <TextBox x:Name="NewAdress" HorizontalAlignment="Left" Height="31" Margin="413,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Background="#FFC7C7C7" BorderBrush="#FF535353"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="313,248,0,0" VerticalAlignment="Top" Width="148" Height="35" FontSize="16"/>
+        <TextBox x:Name="NewPhone" HorizontalAlignment="Left" Height="31" Margin="413,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Background="#FFC7C7C7" BorderBrush="#FF535353"/>
+        <Button x:Name="Image" Content="Додати картинку" HorizontalAlignment="Left" Margin="413,178,0,0" VerticalAlignment="Top" Width="360" Click="DialogClick" Background="#FFC7C7C7" BorderBrush="#FF303030" Height="30" FontSize="14"/>
+        <Image x:Name="ImageSave" HorizontalAlignment="Left" Height="113" Margin="10,166,0,0" VerticalAlignment="Top" Width="273"/>
+
+    </Grid>
+</Window>
