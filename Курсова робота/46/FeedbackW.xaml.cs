@@ -12,6 +12,7 @@ namespace _46
             Model.Content = Client.dt.Rows[Client.index][2].ToString();
             Run.Content = Client.dt.Rows[Client.index][3].ToString();
             Price.Content = Client.dt.Rows[Client.index][4].ToString();
+            ImageCar.Source = Temporary.GetImageFromByteArray((byte[])Client.dt.Rows[Client.index][1]);
             if (Client.dt.Rows[Client.index][5].ToString().Contains(" "))
                 Date.Content = Client.dt.Rows[Client.index][5].ToString().Substring(0, 9);
             else
@@ -20,6 +21,8 @@ namespace _46
             Surname.Content = Client.dt.Rows[Client.index][6].ToString();
             Name.Content = Client.dt.Rows[Client.index][7].ToString();
             Phone.Content = Client.dt.Rows[Client.index][8].ToString();
+            Address.Content = Client.temp.Rows[Client.index][1].ToString();
+            ImageSel.Source = Temporary.GetImageFromByteArray((byte[])Client.temp.Rows[Client.index][0]);
         }
         public static string res = "";
         private void Buy_Click(object sender, RoutedEventArgs e) 

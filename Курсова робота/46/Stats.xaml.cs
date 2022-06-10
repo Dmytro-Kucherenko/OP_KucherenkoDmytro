@@ -10,10 +10,8 @@ namespace _46
     {
         string connectionStr = null;
         SqlConnection connection = null;
-        SqlCommand command = null;
         SqlDataAdapter adapter = null;
         DataTable dt;
-        DataTable ft;
         public Stats()
         {
             InitializeComponent();

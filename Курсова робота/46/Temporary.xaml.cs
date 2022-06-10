@@ -105,10 +105,8 @@ namespace _46
                 ImageSave.Source = GetImageFromByteArray(image);
             }
         }
-
         public static BitmapFrame GetImageFromByteArray(byte[] array) { return GetImageFromMemoryStream(new MemoryStream(array)); }
         public static BitmapFrame GetImageFromMemoryStream(MemoryStream memoryStream) { return BitmapFrame.Create(memoryStream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.OnLoad); }
-
         public static int serial = 0;
         private void AutoClick(object sender, RoutedEventArgs e)
         {

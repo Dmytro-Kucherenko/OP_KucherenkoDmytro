@@ -5,28 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_46"
         mc:Ignorable="d"
-        Title="Замовлення" Height="550.396" Width="800" Closing="Window_Closing">
+        Title="Замовлення" Height="550.396" Width="1232.5" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Перегляд замовлення" HorizontalAlignment="Left" Margin="53,13,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Label Content="Перегляд замовлення" HorizontalAlignment="Left" Margin="157,12,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Label Content="Залиште свій відгук:" HorizontalAlignment="Left" Margin="18,327,0,0" VerticalAlignment="Top" Width="212" Height="38" FontSize="22"/>
         <Label Content="Модель" HorizontalAlignment="Left" Margin="18,68,0,0" VerticalAlignment="Top" Width="130" Height="54" FontSize="22"/>
         <Label Content="Пробіг" HorizontalAlignment="Left" Margin="18,116,0,0" VerticalAlignment="Top" Width="130" Height="42" FontSize="22"/>
         <Label Content="Ціна" HorizontalAlignment="Left" Margin="18,166,0,0" VerticalAlignment="Top" Width="130" Height="42" FontSize="22"/>
-        <Button x:Name="Buy" Content="Купити автомобіль" HorizontalAlignment="Left" Margin="18,270,0,0" VerticalAlignment="Top" Width="376" Height="42" Background="#FFB6B6B6" BorderBrush="#FF292929" FontSize="22" Click="Buy_Click"/>
+        <Button x:Name="Buy" Content="Купити автомобіль" HorizontalAlignment="Left" Margin="18,270,0,0" VerticalAlignment="Top" Width="597" Height="42" Background="#FFB6B6B6" BorderBrush="#FF292929" FontSize="22" Click="Buy_Click"/>
         <Label Content="Дата випуску" HorizontalAlignment="Left" Margin="18,213,0,0" VerticalAlignment="Top" Width="142" Height="42" FontSize="22"/>
         <Label x:Name="Date" Content="" HorizontalAlignment="Left" Margin="157,213,0,0" VerticalAlignment="Top" Width="237" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
         <Label x:Name="Price" Content="" HorizontalAlignment="Left" Margin="132,166,0,0" VerticalAlignment="Top" Width="262" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
         <Label x:Name="Run" Content="" HorizontalAlignment="Left" Margin="132,116,0,0" VerticalAlignment="Top" Width="262" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
         <Label x:Name="Model" Content="" HorizontalAlignment="Left" Margin="132,69,0,0" VerticalAlignment="Top" Width="262" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
-        <Label Content="Контакти дилера" HorizontalAlignment="Left" Margin="478,13,0,0" VerticalAlignment="Top" FontSize="30"/>
-        <Label Content="Прізвище" HorizontalAlignment="Left" Margin="418,69,0,0" VerticalAlignment="Top" Width="130" Height="54" FontSize="22"/>
-        <Label Content="Ім'я" HorizontalAlignment="Left" Margin="418,116,0,0" VerticalAlignment="Top" Width="130" Height="54" FontSize="22"/>
-        <Label Content="Номер" HorizontalAlignment="Left" Margin="418,166,0,0" VerticalAlignment="Top" Width="142" Height="42" FontSize="22"/>
-        <Label x:Name="Phone" Content="" HorizontalAlignment="Left" Margin="548,166,0,0" VerticalAlignment="Top" Width="225" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
-        <Label x:Name="Name" Content="" HorizontalAlignment="Left" Margin="548,115,0,0" VerticalAlignment="Top" Width="225" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
-        <Label x:Name="Surname" Content="" HorizontalAlignment="Left" Margin="548,68,0,0" VerticalAlignment="Top" Width="225" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
-        <Button x:Name="Exit" Content="Відмінити" HorizontalAlignment="Right" Margin="0,270,19,0" VerticalAlignment="Top" Width="355" Click="ExitClick" Background="#FFDC9999" BorderBrush="#FF1D1D1D" Height="42" FontSize="22" RenderTransformOrigin="-1.457,-8.024"/>
-        <TextBox x:Name="Feedbacks" HorizontalAlignment="Left" Height="124" Margin="18,370,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="755" Background="#FFC7C7C7" BorderBrush="#FF535353" FontSize="22"/>
+        <Label Content="Контакти дилера" HorizontalAlignment="Left" Margin="786,12,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Label Content="Прізвище" HorizontalAlignment="Left" Margin="626,71,0,0" VerticalAlignment="Top" Width="130" Height="54" FontSize="22"/>
+        <Label Content="Ім'я" HorizontalAlignment="Left" Margin="626,118,0,0" VerticalAlignment="Top" Width="130" Height="54" FontSize="22"/>
+        <Label Content="Номер" HorizontalAlignment="Left" Margin="626,168,0,0" VerticalAlignment="Top" Width="142" Height="42" FontSize="22"/>
+        <Label x:Name="Phone" Content="" HorizontalAlignment="Left" Margin="740,168,0,0" VerticalAlignment="Top" Width="240" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
+        <Label x:Name="Name" Content="" HorizontalAlignment="Left" Margin="740,117,0,0" VerticalAlignment="Top" Width="240" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
+        <Label x:Name="Surname" Content="" HorizontalAlignment="Left" Margin="740,70,0,0" VerticalAlignment="Top" Width="240" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
+        <Button x:Name="Exit" Content="Відмінити" HorizontalAlignment="Right" Margin="0,270,24,0" VerticalAlignment="Top" Width="572" Click="ExitClick" Background="#FFDC9999" BorderBrush="#FF1D1D1D" Height="42" FontSize="22" RenderTransformOrigin="-1.457,-8.024"/>
+        <TextBox x:Name="Feedbacks" HorizontalAlignment="Left" Height="124" Margin="18,370,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="1182" Background="#FFC7C7C7" BorderBrush="#FF535353" FontSize="22"/>
+        <Label Content="Адреса" HorizontalAlignment="Left" Margin="626,215,0,0" VerticalAlignment="Top" Width="142" Height="42" FontSize="22"/>
+        <Label x:Name="Address" Content="" HorizontalAlignment="Left" Margin="740,215,0,0" VerticalAlignment="Top" Width="240" Height="42" FontSize="22" BorderBrush="Black" Background="#FFC7C7C7" BorderThickness="1"/>
+        <Image x:Name="ImageSel" HorizontalAlignment="Left" Height="183" Margin="988,72,0,0" VerticalAlignment="Top" Width="210"/>
+        <Image x:Name="ImageCar" HorizontalAlignment="Left" Height="183" Margin="405,69,0,0" VerticalAlignment="Top" Width="210"/>
 
     </Grid>
 </Window>

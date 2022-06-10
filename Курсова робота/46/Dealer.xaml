@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_46"
         mc:Ignorable="d"
-        Title="Продаж" Height="807" Width="1792.5" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+        Title="Продаж" Height="807" Width="1792.5" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseDown" MouseRightButtonDown="Window_MouseDown">
     <Grid Margin="0,0,-8,3">
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="Selling" HorizontalAlignment="Left" Height="600" Margin="688,85,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="22" Grid.RowSpan="2"/>
-        <DataGrid x:Name="Already" HorizontalAlignment="Left" Height="600" Margin="46,85,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="22" Grid.RowSpan="2"/>
-        <Button x:Name="Exit" Content="Вийти" HorizontalAlignment="Left" Margin="1332,642,0,0" VerticalAlignment="Top" Width="420" Click="ExitClick" Background="#FFDC9999" BorderBrush="#FF1D1D1D" Height="42" FontSize="14" Grid.RowSpan="2"/>
+        <DataGrid x:Name="Selling" HorizontalAlignment="Left" Height="600" Margin="688,85,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="22" Grid.RowSpan="2" IsReadOnly="True" GotFocus="Selling_MouseRightButtonUp"/>
+        <DataGrid x:Name="Already" HorizontalAlignment="Left" Height="600" Margin="46,85,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="22" Grid.RowSpan="2" IsReadOnly="True"/>
+        <Button x:Name="Exit" Content="Вийти" HorizontalAlignment="Left" Margin="1332,642,0,0" VerticalAlignment="Top" Width="420" Click="ExitClick" Background="#FFDC9999" BorderBrush="#FF1D1D1D" Height="42" FontSize="22" Grid.RowSpan="2"/>
         <Label Content="Таблиця з вашими виконаними договорами" HorizontalAlignment="Left" Margin="74,27,0,0" VerticalAlignment="Top" Width="557" Height="53" FontSize="26" Grid.RowSpan="2"/>
         <Label Content="Таблиця з вашими автомобілями у продажі" HorizontalAlignment="Left" Margin="730,27,0,0" VerticalAlignment="Top" Width="530" Height="53" FontSize="26" Grid.RowSpan="2"/>
         <Label Content="Додавання автомобіля на продаж" HorizontalAlignment="Left" Margin="1332,26,0,0" VerticalAlignment="Top" Width="420" Height="52" FontSize="26" Grid.RowSpan="2"/>
@@ -32,6 +32,8 @@
         <Label Content="Дата випуску" HorizontalAlignment="Left" Margin="1332,287,0,0" VerticalAlignment="Top" Width="161" Height="42" FontSize="22" Grid.RowSpan="2"/>
         <DatePicker x:Name="DateP" HorizontalAlignment="Left" Margin="1473,287,0,0" VerticalAlignment="Top" Width="273" Height="42" Background="#FFC7C7C7" FontSize="22" Grid.RowSpan="2"/>
         <Button x:Name="Serial" Content="" HorizontalAlignment="Left" Margin="730,712,0,0" VerticalAlignment="Top" Width="304" Height="42" Background="#FFC7C7C7" BorderBrush="#FF292929" FontSize="22" Click="Serial_Click" Grid.RowSpan="2"/>
-
+        <Rectangle x:Name="Background" Fill="#FFC7C7C7" HorizontalAlignment="Left" Height="78" Margin="1307,692,0,0" Grid.RowSpan="2" Stroke="#FF898989" VerticalAlignment="Top" Width="128" IsEnabled="False"/>
+        <Button x:Name="delButt" Content="Видалити" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="29" Background="#FFB6B6B6" BorderBrush="Black" FontSize="18" RenderTransformOrigin="0.502,-1.595" IsDefault="True" Cursor="AppStarting" Grid.RowSpan="2" Margin="1316,734,0,0" IsEnabled="False" Click="delButt_Click"/>
+        <Button x:Name="ChangeButt" Content="Змінити" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="28" Background="#FFB6B6B6" BorderBrush="Black" FontSize="18" RenderTransformOrigin="0.502,-1.595" IsDefault="True" Cursor="AppStarting" Grid.RowSpan="2" Margin="1316,700,0,0" IsEnabled="False" Click="ChangeButt_Click"/>
     </Grid>
 </Window>

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Data;
 using System.Windows.Input;
 using System.Data.SqlClient;
-using System.Globalization;
 
 namespace _46
 {
@@ -15,7 +13,7 @@ namespace _46
         SqlConnection connection = null;
         SqlCommand command = null;
         SqlDataAdapter adapter = null;
-        static public DataTable dt;
+        static public DataTable dt, temp;
         DataTable ft;
         static public int index = 0;
         public Client()
@@ -76,6 +74,11 @@ namespace _46
             };
             Cars.ItemsSource = dt.DefaultView;
 
+            strQ = "SELECT dbo.Dealer.Photo, dbo.Dealer.Adress FROM dbo.Car INNER JOIN dbo.Dealer ON dbo.Car.IDDealer = dbo.Dealer.IDDealer WHERE dbo.Car.Status = 1;";
+            adapter = new SqlDataAdapter(strQ, connection);
+            temp = new DataTable("Додатково");
+            adapter.Fill(temp);
+
             connection.Close();
         }
         public DataGridTemplateColumn GetImageColumn(string columnName)
@@ -91,20 +94,6 @@ namespace _46
             templateColumn.Width = 150;
 
             return templateColumn;
-        }
-        public class ImageConvertor : IValueConverter
-        {
-            public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-            {
-                if (value.GetType() == typeof(System.DBNull))
-                    return null;
-                return Temporary.GetImageFromByteArray((byte[])value);
-            }
-
-            public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-            {
-                throw new NotImplementedException();
-            }
         }
         private void CarsFilter()
         {

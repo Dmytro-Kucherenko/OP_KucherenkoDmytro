@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_46"
         mc:Ignorable="d"
-        Title="ClientData" Height="505.5" Width="445.5" WindowStartupLocation="CenterScreen">
+        Title="Дані клієнта" Height="505.5" Width="445.5" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="Прізвище" HorizontalAlignment="Left" Margin="19,107,0,0" VerticalAlignment="Top" Width="191" Height="46" FontSize="22"/>
         <Label Content="Побатькові" HorizontalAlignment="Left" Margin="19,158,0,0" VerticalAlignment="Top" Width="185" Height="46" FontSize="22"/>

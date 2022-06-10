@@ -27,3 +27,5 @@ E:\Stud\OP\Курсова робота\46\obj\Debug\ClientData.g.cs
 E:\Stud\OP\Курсова робота\46\obj\Debug\ClientData.baml
 E:\Stud\OP\Курсова робота\46\obj\Debug\DealerData.g.cs
 E:\Stud\OP\Курсова робота\46\obj\Debug\DealerData.baml
+E:\Stud\OP\Курсова робота\46\obj\Debug\CarData.g.cs
+E:\Stud\OP\Курсова робота\46\obj\Debug\CarData.baml

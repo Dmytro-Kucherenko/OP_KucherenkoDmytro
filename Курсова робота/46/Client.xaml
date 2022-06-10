@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Купівля" Height="903.667" Width="1776" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
     <Grid>
-        <DataGrid x:Name="Feedback" HorizontalAlignment="Left" Height="600" Margin="34,190,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="18"/>
+        <DataGrid x:Name="Feedback" HorizontalAlignment="Left" Height="600" Margin="34,190,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="18" IsReadOnly="True"/>
         <Label Content="Відгуки" HorizontalAlignment="Left" Margin="263,31,0,0" VerticalAlignment="Top" Width="103" Height="53" FontSize="26"/>
         <DatePicker x:Name="DatePrev" HorizontalAlignment="Left" Margin="116,136,0,0" VerticalAlignment="Top" Width="172" Height="42" Background="#FFC7C7C7" FontSize="22"/>
         <DatePicker x:Name="DateNext" HorizontalAlignment="Left" Margin="288,136,0,0" VerticalAlignment="Top" Width="173" Height="42" Background="#FFC7C7C7" FontSize="22"/>
         <TextBox x:Name="FeedbackFind" HorizontalAlignment="Left" Height="42" Margin="116,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="518" Background="#FFC7C7C7" BorderBrush="#FF535353" FontSize="22" KeyUp="FeedbackClick"/>
         <Label Content="Межі" HorizontalAlignment="Left" Margin="34,136,0,0" VerticalAlignment="Top" Width="77" Height="42" FontSize="22"/>
-        <DataGrid x:Name="Cars" HorizontalAlignment="Left" Height="600" Margin="672,190,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="18"/>
+        <DataGrid x:Name="Cars" HorizontalAlignment="Left" Height="600" Margin="672,190,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="18" IsReadOnly="True"/>
         <Label Content="Автмобілі в наявності" HorizontalAlignment="Left" Margin="828,29,0,0" VerticalAlignment="Top" Width="300" Height="53" FontSize="26"/>
         <ComboBox x:Name="CarsCombo" HorizontalAlignment="Left" Margin="672,136,0,0" VerticalAlignment="Top" Width="152" Height="42" FontSize="22" Background="#FFC7C7C7" BorderBrush="#FF1D1D1D" BorderThickness="1" SelectionChanged="CarsClick">
             <ComboBoxItem Content="Дорожче за" HorizontalAlignment="Left" Width="168"/>

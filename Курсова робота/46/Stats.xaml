@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Статистика" Height="830" Width="680" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
-        <DataGrid x:Name="Output" HorizontalAlignment="Left" Height="600" Margin="32,108,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="18"/>
+        <DataGrid x:Name="Output" HorizontalAlignment="Left" Height="600" Margin="32,108,0,0" VerticalAlignment="Top" Width="600" Background="#FFBFBFBF" BorderBrush="Black" FontSize="18" IsReadOnly="True"/>
         <Label Content="Статистика" HorizontalAlignment="Left" Margin="261,10,0,0" VerticalAlignment="Top" Width="141" Height="40" FontSize="26"/>
         <ComboBox x:Name="Combo" HorizontalAlignment="Left" Margin="32,55,0,0" VerticalAlignment="Top" Width="600" Height="42" FontSize="22" Background="#FFC7C7C7" BorderBrush="#FF1D1D1D" BorderThickness="1" SelectionChanged="Combo_SelectionChanged">
             <ComboBoxItem Content="Кількость договорів, укладених з кожним клієнтом" HorizontalAlignment="Left" Width="600"/>
